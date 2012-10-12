@@ -1,0 +1,11 @@
+task :default => :test
+
+desc "Ejecutar Circunferencia"
+task :Circunferencia do
+	sh "ruby -I. Circunferencia.rb"
+end
+
+desc "Ejecutar el test"
+task :test do
+	sh "ruby -I. test.rb"
+end	
